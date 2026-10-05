@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Per-turn odds of a sentence meeting each pole, from logistic GEE with an exchangeable working correlation clustered on dialogue, adjusting for target model and persona.}
+\label{tab:gee_turn}
+\begin{tabular}{lrrrrr}
+\toprule
+Outcome & Term & Odds ratio & CI & p & n obs \\
+\midrule
+IF & turn (per additional turn) & 1.299 & [1.283, 1.316] & $<$0.0001 & 69,194 \\
+OS & turn (per additional turn) & 1.224 & [1.207, 1.242] & $<$0.0001 & 69,182 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,46 @@
+{
+  "output": "deepseek_judge/judgments.jsonl",
+  "output_gzip": "deepseek_judge/judgments.jsonl.gz",
+  "decompress": "gzip -dk deepseek_judge/judgments.jsonl.gz",
+  "merge_strategy": "prefer MET/NOT_MET over PARSE_FAIL/missing; same-rank later file wins",
+  "source_files": [
+    {
+      "name": "sample25_deduped",
+      "path": "outputs/pdf_prompt_v11_sample25/judgments_deduped.jsonl",
+      "rows": 76921
+    },
+    {
+      "name": "parse_fail_retry",
+      "path": "outputs/pdf_prompt_v11_sample25_parse_fail_retry/judgments_deduped_shard0.jsonl",
+      "rows": 197
+    },
+    {
+      "name": "remaining_shard0",
+      "path": "outputs/pdf_prompt_v11_remaining75/judgments_deduped_shard0.jsonl",
+      "rows": 65973
+    },
+    {
+      "name": "remaining_shard1",
+      "path": "outputs/pdf_prompt_v11_remaining75/judgments_deduped_shard1.jsonl",
+      "rows": 69228
+    },
+    {
+      "name": "remaining_shard2",
+      "path": "outputs/pdf_prompt_v11_remaining75/judgments_deduped_shard2.jsonl",
+      "rows": 67141
+    },
+    {
+      "name": "remaining_shard3",
+      "path": "outputs/pdf_prompt_v11_remaining75/judgments_deduped_shard3.jsonl",
+      "rows": 66904
+    }
+  ],
+  "unique_keys": 345970,
+  "dialogues": 1596,
+  "labels": {
+    "NOT_MET": 245649,
+    "MET": 100226,
+    "PARSE_FAIL": 94,
+    "null": 1
+  }
+}

@@ -1,0 +1,20 @@
+.env
+__pycache__/
+*.pyc
+outputs/
+.venv/
+venv/
+.DS_Store
+
+# local Korean review exports (do not commit)
+*_ko.md
+*_ko.jsonl
+
+# large files produced by following the README
+deepseek_judge/judgments.jsonl
+openai_judge/judgments.jsonl
+analysis/data/sentences_from_canonical.parquet
+
+# CounselBench-derived files; see "Data release" in the README
+data/corpus/stimuli.jsonl
+dialogues.jsonl

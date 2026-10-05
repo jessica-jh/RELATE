@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Judge coverage by target model and persona. Expected is $76$ situations per persona cell. Parse-fail is the share of sentences for which at least one of the five criterion calls did not return parseable JSON; these are treated as missing, not as NOT\_MET.}
+\label{tab:coverage}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & P1 & P2 & P3 & Total & Expected & Coverage \% & Sentences & Parse-fail \% \\
+\midrule
+Llama-3.1-8B & 76 & 76 & 76 & 228 & 228 & 100.0 & 6,447 & 0.0 \\
+Llama-3.1-70B & 76 & 76 & 76 & 228 & 228 & 100.0 & 6,966 & 0.0 \\
+Mistral-7B & 76 & 76 & 76 & 228 & 228 & 100.0 & 11,346 & 0.0 \\
+Qwen3-14B & 76 & 76 & 76 & 228 & 228 & 100.0 & 9,837 & 0.0 \\
+Qwen3-32B & 76 & 76 & 76 & 228 & 228 & 100.0 & 10,776 & 0.0 \\
+DeepSeek-V3 & 76 & 76 & 76 & 228 & 228 & 100.0 & 13,475 & 0.5 \\
+Claude-Haiku-4.5 & 76 & 76 & 76 & 228 & 228 & 100.0 & 10,347 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\small
+\caption{The same breakdowns computed under each judge on the shared 10\% subsample. Absolute rates differ (GPT-4o is systematically stricter); the question is whether the orderings and directions survive.}
+\label{tab:judge_replication}
+\begin{tabular}{lrrrrr}
+\toprule
+Level & Group & IF DeepSeek & IF GPT-4o & OS DeepSeek & OS GPT-4o \\
+\midrule
+model & Claude-Haiku-4.5 & 67.8 & 66.6 & 61.0 & 28.2 \\
+model & DeepSeek-V3 & 71.5 & 65.6 & 43.6 & 18.6 \\
+model & Llama-3.1-70B & 62.1 & 55.1 & 45.9 & 21.3 \\
+model & Llama-3.1-8B & 58.7 & 51.7 & 39.6 & 17.8 \\
+model & Mistral-7B & 44.5 & 39.3 & 50.7 & 28.4 \\
+model & Qwen3-14B & 68.6 & 63.6 & 49.1 & 21.3 \\
+model & Qwen3-32B & 68.8 & 64.7 & 53.2 & 19.2 \\
+persona & P1 & 62.2 & 59.0 & 42.0 & 17.5 \\
+persona & P2 & 65.1 & 59.6 & 45.6 & 20.8 \\
+persona & P3 & 62.4 & 57.0 & 56.5 & 26.2 \\
+turn & 1 & 41.4 & 49.6 & 29.4 & 25.4 \\
+turn & 2 & 58.1 & 54.1 & 44.3 & 30.8 \\
+turn & 3 & 66.4 & 58.6 & 51.3 & 25.2 \\
+turn & 4 & 71.1 & 63.7 & 56.3 & 23.3 \\
+turn & 5 & 69.3 & 60.8 & 56.7 & 17.4 \\
+turn & 6 & 70.3 & 61.8 & 57.3 & 13.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

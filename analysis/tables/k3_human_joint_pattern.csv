@@ -1,0 +1,7 @@
+Pair,IF only,OS only,Both,Neither,Agreement,Agreement \%,95\% CI,Cohen $\kappa$
+Annotator 1 vs Annotator 2,304,184,0,324,812,92.2,"[90.0, 93.9]",0.88
+Annotator 1 vs DeepSeek,165,92,0,92,349,39.6,"[32.2, 47.0]",0.21
+Annotator 1 vs GPT-4o,156,67,0,156,379,43.0,"[37.7, 48.6]",0.18
+Annotator 2 vs DeepSeek,171,90,0,84,345,39.2,"[32.4, 45.8]",0.2
+Annotator 2 vs GPT-4o,164,62,0,147,373,42.3,"[37.1, 47.8]",0.16
+DeepSeek vs GPT-4o,168,62,93,115,438,49.7,"[44.2, 55.2]",0.33

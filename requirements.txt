@@ -1,0 +1,18 @@
+datasets>=2.19
+openai>=1.30
+anthropic>=0.34
+google-genai>=0.3
+pydantic>=2.6
+tenacity>=8.2
+PyYAML>=6.0
+tiktoken>=0.7
+tqdm>=4.66
+
+# analysis (versions used to produce the reported tables and figures)
+numpy>=2.4
+pandas>=3.0
+scipy>=1.17
+statsmodels>=0.14.6
+matplotlib>=3.10
+pyarrow>=23.0
+openpyxl>=3.1

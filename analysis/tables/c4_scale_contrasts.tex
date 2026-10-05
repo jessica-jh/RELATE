@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Within-family scale contrasts (larger minus smaller). Serving configuration is confounded with checkpoint, so these are descriptive.}
+\label{tab:scale}
+\begin{tabular}{lrrrr}
+\toprule
+Contrast & Metric & $\Delta$ (pp) & CI & p \\
+\midrule
+Llama 8B $\to$ 70B & IF & 6.2 & [4.0, 8.3] & 0.0001 \\
+Llama 8B $\to$ 70B & OS & -0.0 & [-3.8, 3.7] & 0.9852 \\
+Qwen3 14B $\to$ 32B & IF & 2.9 & [1.1, 4.6] & 0.0014 \\
+Qwen3 14B $\to$ 32B & OS & -1.8 & [-6.1, 2.5] & 0.4232 \\
+\bottomrule
+\end{tabular}
+\end{table}

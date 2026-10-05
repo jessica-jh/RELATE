@@ -1,0 +1,3 @@
+Outcome,Term,Odds ratio,CI,p,n obs
+IF,turn (per additional turn),1.2994310310439057,"[1.283, 1.316]",$<$0.0001,69194
+OS,turn (per additional turn),1.2243571060620266,"[1.207, 1.242]",$<$0.0001,69182

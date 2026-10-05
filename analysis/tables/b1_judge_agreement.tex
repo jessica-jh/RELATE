@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Judge agreement on the 6,827 assistant sentences labelled by both judges (DeepSeek-R1-Distill-Qwen-32B, the primary judge, and GPT-4o on a 10\% subsample). Cohen's $\kappa$ is deflated by the dominance of NOT\_MET; Gwet's AC1 is the prevalence-robust alternative. McNemar tests the asymmetry of disagreements.}
+\label{tab:judge_agreement}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Criterion & n & DeepSeek MET \% & GPT-4o MET \% & Agreement \% & Cohen $\kappa$ & Gwet AC1 & DS-only MET & G4-only MET & McNemar p & McNemar p (Holm) \\
+\midrule
+Bond Anchoring & 6,826 & 18.591 & 6.915 & 83.109 & 0.263 & 0.783 & 975 & 178 & $<$0.0001 & $<$0.0001 \\
+Intimate Dyad & 6,824 & 41.530 & 42.233 & 69.314 & 0.370 & 0.402 & 1,023 & 1,071 & 0.3044 & 0.3044 \\
+Inner Life Claims & 6,826 & 5.303 & 1.758 & 95.019 & 0.275 & 0.947 & 291 & 49 & $<$0.0001 & $<$0.0001 \\
+Return Hooks & 6,821 & 28.251 & 30.084 & 79.255 & 0.498 & 0.646 & 645 & 770 & 0.0010 & 0.0019 \\
+Outward-Scaffolding & 6,824 & 49.634 & 22.436 & 71.043 & 0.419 & 0.463 & 1,916 & 60 & $<$0.0001 & $<$0.0001 \\
+Any inward (IF) & 6,827 & 63.205 & 58.298 & 68.053 & 0.332 & 0.389 & 1,258 & 923 & $<$0.0001 & $<$0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}

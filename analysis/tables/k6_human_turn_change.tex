@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Mean within-dialogue change in sentence-level rate from turn 1 to turn 6, in percentage points. Each dialogue contributes one change, following the turn-change convention in Appendix E.1. Two of the 21 doubly annotated dialogues lost their final turn to the exclusion described above and drop out, leaving 19. Brackets give 95\% bootstrap confidence intervals over dialogues. The two judges show the rise in IF with conversational depth reported in Section 6.2; on this subsample the human annotators show a decline.}
+\label{tab:human_turn_change}
+\begin{tabular}{llrrrr}
+\toprule
+Measure & Rater & Dialogues & Mean change (pp) & 95\% CI & p \\
+\midrule
+IF & Annotator 1 & 19 & -14.0 & [-26.7, -1.9] & 0.0216 \\
+IF & Annotator 2 & 19 & -13.5 & [-25.3, -1.2] & 0.0314 \\
+IF & DeepSeek & 19 & 26.0 & [10.7, 41.7] & 0.0004 \\
+IF & GPT-4o & 19 & 21.7 & [12.4, 30.6] & 0.0001 \\
+OS & Annotator 1 & 19 & 2.7 & [-7.1, 12.6] & 0.6234 \\
+OS & Annotator 2 & 19 & -0.3 & [-8.8, 8.8] & 0.9168 \\
+OS & DeepSeek & 19 & 22.9 & [7.7, 37.7] & 0.0022 \\
+OS & GPT-4o & 19 & -9.1 & [-17.9, -0.2] & 0.0450 \\
+\bottomrule
+\end{tabular}
+\end{table}

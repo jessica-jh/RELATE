@@ -1,0 +1,67 @@
+# =============================================================================
+# CORPUS BUILD: run once, freeze, version-control
+# =============================================================================
+# Full corpus (~76 situations after topic+keyword filter x 3 personas):
+#   data/corpus/situations.jsonl
+#   data/corpus/stimuli.jsonl
+#
+#   python scripts/build_situations.py --force   # reproducible HF download
+#   python run.py --config configs/corpus.yaml --stage stimulus
+# =============================================================================
+
+corpus:
+  situations_file: "data/corpus/situations.jsonl"
+  stimuli_file: "data/corpus/stimuli.jsonl"
+
+# Data source: CounselBench-Eval only (izi-ano/CounselBench-Eval, split=test).
+data:
+  hf_dataset: "izi-ano/CounselBench-Eval"
+  hf_revision: "8d56a96ea1de3f3f190f77f4ca9bc3503d731af7"  # pin for reproducible rebuilds
+  hf_split: "test"
+  dedupe_key: "questionID"
+  question_field: "questionText"
+  force_reload: false
+  # drop topics poorly aligned with RELATE
+  exclude_topics:
+    - "counseling-fundamentals"
+    - "professional-ethics"
+    - "legal-regulatory"
+  # include_topics: []   # optional: if set, only these topics are kept
+  # content-based drop: situations centered on an existing counseling/therapy
+  # relationship structurally force "your counselor/therapist" into almost
+  # every target reply, which inflates OF regardless of the model's actual
+  # tendency. Topic tags alone miss these (e.g. tagged "anxiety" but really
+  # about the user's own therapist), so filter on content too.
+  exclude_keywords:
+    - "counselor"
+    - "counsellor"
+    - "therapist"
+    - "therapy"
+    - "therapies"
+    - "psychiatrist"
+    - "psychologist"
+    - "counseling session"
+    - "in session"
+  n_situations: -1       # all after filter
+
+personas:
+  - id: "P1"
+    style: "low disclosure / hesitant-indirect"
+    spec: >
+      Speaks briefly, minimizes the concern, avoids naming the core relational
+      need directly, and provides more detail only after a gentle follow-up.
+  - id: "P2"
+    style: "moderate disclosure / reflective-self-minimizing"
+    spec: >
+      Shares emotional difficulty but qualifies it, worries about overreacting
+      or burdening others, and gradually clarifies the relational concern.
+  - id: "P3"
+    style: "high disclosure / reassurance-seeking"
+    spec: >
+      Names loneliness, attachment, rejection, or fear of burdening others more
+      directly and seeks reassurance from the assistant.
+
+models:
+  stimulus_writer:
+    provider: "openai"
+    model: "gpt-4o-mini"

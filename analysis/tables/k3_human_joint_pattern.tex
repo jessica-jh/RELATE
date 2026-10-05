@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Agreement on the joint IF/OS pattern, treating each sentence as one of four mutually exclusive outcomes. A sentence counts as agreement only when both raters assign the same pattern, so a judge that marks both poles cannot match an annotator who marks one. Counts are of agreeing sentences in each category. Brackets give 95\% dialogue-level bootstrap confidence intervals. Because both protocols treat IF and OS as independent labels, the per-pole comparison in Table~\ref{tab:human_agreement} is the primary one and this table is the stricter derived view.}
+\label{tab:human_joint_pattern}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Pair & IF only & OS only & Both & Neither & Agreement & Agreement \% & 95\% CI & Cohen $\kappa$ \\
+\midrule
+Annotator 1 vs Annotator 2 & 304 & 184 & 0 & 324 & 812 & 92.2 & [90.0, 93.9] & 0.88 \\
+Annotator 1 vs DeepSeek & 165 & 92 & 0 & 92 & 349 & 39.6 & [32.2, 47.0] & 0.21 \\
+Annotator 1 vs GPT-4o & 156 & 67 & 0 & 156 & 379 & 43.0 & [37.7, 48.6] & 0.18 \\
+Annotator 2 vs DeepSeek & 171 & 90 & 0 & 84 & 345 & 39.2 & [32.4, 45.8] & 0.20 \\
+Annotator 2 vs GPT-4o & 164 & 62 & 0 & 147 & 373 & 42.3 & [37.1, 47.8] & 0.16 \\
+DeepSeek vs GPT-4o & 168 & 62 & 93 & 115 & 438 & 49.7 & [44.2, 55.2] & 0.33 \\
+\bottomrule
+\end{tabular}
+\end{table}

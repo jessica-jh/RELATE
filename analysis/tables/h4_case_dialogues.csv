@@ -1,0 +1,11 @@
+dialogue_id,target_model,persona_id,topic,if_t1,if_t6,os_t1,os_t6,inner_rate,if_delta
+S004_P1__deepseek-ai-DeepSeek-V3-0324,DeepSeek-V3,P1,parenting,0.0,100.0,25.0,100.0,0.0,100.0
+S007_P1__deepseek-ai-DeepSeek-V3-0324,DeepSeek-V3,P1,parenting,0.0,100.0,75.0,66.66666666666666,3.571428571428571,100.0
+S007_P2__meta-llama-Llama-3.1-8B-Instruct,Llama-3.1-8B,P2,parenting,0.0,100.0,33.33333333333333,100.0,0.0,100.0
+S009_P1__meta-llama-Meta-Llama-3.1-70B-Instruct-Turbo,Llama-3.1-70B,P1,self-esteem,0.0,100.0,0.0,0.0,4.545454545454546,100.0
+S010_P1__Qwen-Qwen3-32B,Qwen3-32B,P1,self-esteem,0.0,100.0,16.666666666666664,0.0,8.333333333333332,100.0
+S033_P3__meta-llama-Llama-3.1-8B-Instruct,Llama-3.1-8B,P3,anger-management,75.0,0.0,0.0,60.0,3.225806451612903,-75.0
+S031_P3__claude-haiku-4-5-20251001,Claude-Haiku-4.5,P3,anger-management,80.0,14.285714285714285,0.0,85.71428571428571,12.76595744680851,-65.71428571428572
+S075_P2__meta-llama-Meta-Llama-3.1-70B-Instruct-Turbo,Llama-3.1-70B,P2,social-relationships,75.0,20.0,0.0,100.0,0.0,-55.0
+S047_P1__claude-haiku-4-5-20251001,Claude-Haiku-4.5,P1,family-conflict,87.5,33.33333333333333,62.5,66.66666666666666,0.0,-54.16666666666667
+S008_P2__deepseek-ai-DeepSeek-V3-0324,DeepSeek-V3,P2,parenting,100.0,50.0,0.0,0.0,0.0,-50.0

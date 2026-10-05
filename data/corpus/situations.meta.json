@@ -1,0 +1,28 @@
+{
+  "built_at": "2026-08-14T19:58:49.336924+00:00",
+  "hf_dataset": "izi-ano/CounselBench-Eval",
+  "hf_revision": "8d56a96ea1de3f3f190f77f4ca9bc3503d731af7",
+  "hf_split": "test",
+  "dedupe_key": "questionID",
+  "question_field": "questionText",
+  "exclude_topics": [
+    "counseling-fundamentals",
+    "professional-ethics",
+    "legal-regulatory"
+  ],
+  "include_topics": null,
+  "exclude_keywords": [
+    "counselor",
+    "counsellor",
+    "therapist",
+    "therapy",
+    "therapies",
+    "psychiatrist",
+    "psychologist",
+    "counseling session",
+    "in session"
+  ],
+  "n_situations": -1,
+  "situation_id_order": "sorted_by_question_id",
+  "count": 76
+}

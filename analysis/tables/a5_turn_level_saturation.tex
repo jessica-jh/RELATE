@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Turn-level presence saturates. Five of seven models emit at least one inward-facing sentence in more than 99\% of turns, so a binary turn-level measure cannot separate them. Sentence-level shares do.}
+\label{tab:saturation}
+\begin{tabular}{lrrrr}
+\toprule
+Model & Turns with any IF (\%) & Turns with any OS (\%) & Sentences IF (\%) & Sentences OS (\%) \\
+\midrule
+Llama-3.1-8B & 93.9 & 79.6 & 56.2 & 41.6 \\
+Llama-3.1-70B & 95.8 & 77.3 & 62.4 & 41.6 \\
+Mistral-7B & 98.3 & 97.7 & 43.3 & 50.8 \\
+Qwen3-14B & 99.4 & 86.7 & 69.1 & 50.2 \\
+Qwen3-32B & 99.6 & 86.3 & 71.9 & 48.4 \\
+DeepSeek-V3 & 99.6 & 80.5 & 70.2 & 42.0 \\
+Claude-Haiku-4.5 & 99.3 & 91.8 & 66.6 & 62.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

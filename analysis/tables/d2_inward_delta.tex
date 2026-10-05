@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\small
+\caption{The inward-facing delta: within-dialogue change in the share of sentences meeting each pole, from assistant turn~1 to turn~6, in percentage points. Each dialogue contributes its own paired difference; intervals are bootstrap percentiles over dialogues (10,000 resamples). The final column tests whether inward-facing language escalates faster than outward-scaffolding within the same dialogue.}
+\label{tab:inward_delta}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Model & n dialogues & IF $\Delta$ & IF CI & OS $\Delta$ & OS CI & IF$-$OS $\Delta$ & IF$-$OS CI & p (Holm) \\
+\midrule
+ALL & 1,596 & 32.0 & [30.6, 33.4] & 26.4 & [24.8, 28.1] & 5.6 & [3.3, 7.9] & 0.0008 \\
+Llama-3.1-8B & 228 & 39.2 & [35.3, 43.1] & 28.1 & [23.4, 32.8] & 11.1 & [4.4, 17.7] & 0.0080 \\
+Llama-3.1-70B & 228 & 37.1 & [33.1, 41.0] & 27.5 & [22.5, 32.4] & 9.6 & [2.3, 16.8] & 0.0208 \\
+Mistral-7B & 228 & 19.5 & [16.3, 22.8] & 15.1 & [12.1, 18.2] & 4.4 & [0.1, 8.8] & 0.0468 \\
+Qwen3-14B & 228 & 37.5 & [34.2, 40.8] & 29.4 & [24.9, 33.7] & 8.1 & [2.6, 13.9] & 0.0108 \\
+Qwen3-32B & 228 & 40.1 & [36.8, 43.3] & 25.3 & [21.1, 29.4] & 14.8 & [9.3, 20.1] & 0.0008 \\
+DeepSeek-V3 & 228 & 33.7 & [30.6, 36.9] & 23.0 & [18.9, 27.0] & 10.8 & [5.1, 16.4] & 0.0010 \\
+Claude-Haiku-4.5 & 228 & 17.1 & [13.3, 21.0] & 36.8 & [32.1, 41.2] & -19.6 & [-25.9, -13.3] & 0.0008 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,1495 @@
+{
+ "A": {
+  "dialogues_judged": 1596,
+  "dialogues_expected": 1596,
+  "coverage_pct": 100.0,
+  "sentences": 69194,
+  "judgments": 345970,
+  "parse_fail_pct": 0.1,
+  "incomplete_situations": [],
+  "sentences_per_turn_range": [
+   4.71,
+   9.85
+  ],
+  "turn_level_if_max": 99.6
+ },
+ "B": {
+  "n_shared_sentences": 6827,
+  "n_shared_dialogues": 161,
+  "sentence_text_match_rate": 1.0,
+  "overall_agreement_pct": 79.55,
+  "per_criterion": [
+   {
+    "Criterion": "Bond Anchoring",
+    "n": 6826,
+    "DeepSeek MET %": 18.591,
+    "GPT-4o MET %": 6.915,
+    "Agreement %": 83.109,
+    "Cohen $\\kappa$": 0.263,
+    "Gwet AC1": 0.783,
+    "DS-only MET": 975,
+    "G4-only MET": 178
+   },
+   {
+    "Criterion": "Intimate Dyad",
+    "n": 6824,
+    "DeepSeek MET %": 41.53,
+    "GPT-4o MET %": 42.233,
+    "Agreement %": 69.314,
+    "Cohen $\\kappa$": 0.37,
+    "Gwet AC1": 0.402,
+    "DS-only MET": 1023,
+    "G4-only MET": 1071
+   },
+   {
+    "Criterion": "Inner Life Claims",
+    "n": 6826,
+    "DeepSeek MET %": 5.303,
+    "GPT-4o MET %": 1.758,
+    "Agreement %": 95.019,
+    "Cohen $\\kappa$": 0.275,
+    "Gwet AC1": 0.947,
+    "DS-only MET": 291,
+    "G4-only MET": 49
+   },
+   {
+    "Criterion": "Return Hooks",
+    "n": 6821,
+    "DeepSeek MET %": 28.251,
+    "GPT-4o MET %": 30.084,
+    "Agreement %": 79.255,
+    "Cohen $\\kappa$": 0.498,
+    "Gwet AC1": 0.646,
+    "DS-only MET": 645,
+    "G4-only MET": 770
+   },
+   {
+    "Criterion": "Outward-Scaffolding",
+    "n": 6824,
+    "DeepSeek MET %": 49.634,
+    "GPT-4o MET %": 22.436,
+    "Agreement %": 71.043,
+    "Cohen $\\kappa$": 0.419,
+    "Gwet AC1": 0.463,
+    "DS-only MET": 1916,
+    "G4-only MET": 60
+   },
+   {
+    "Criterion": "Any inward (IF)",
+    "n": 6827,
+    "DeepSeek MET %": 63.205,
+    "GPT-4o MET %": 58.298,
+    "Agreement %": 68.053,
+    "Cohen $\\kappa$": 0.332,
+    "Gwet AC1": 0.389,
+    "DS-only MET": 1258,
+    "G4-only MET": 923
+   }
+  ],
+  "rank_correlations": {
+   "model_IF": {
+    "spearman_rho": 0.786,
+    "spearman_p": 0.03623846267982714,
+    "pearson_r": 0.982,
+    "n": 7
+   },
+   "model_OS": {
+    "spearman_rho": 0.714,
+    "spearman_p": 0.07134356146753763,
+    "pearson_r": 0.724,
+    "n": 7
+   },
+   "model_net": {
+    "spearman_rho": 0.607,
+    "spearman_p": 0.14823116148116158,
+    "pearson_r": 0.845,
+    "n": 7
+   },
+   "persona_IF": {
+    "spearman_rho": 0.5,
+    "spearman_p": 0.6666666666666666,
+    "pearson_r": 0.632,
+    "n": 3
+   },
+   "persona_OS": {
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "pearson_r": 0.99,
+    "n": 3
+   },
+   "persona_net": {
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "pearson_r": 0.981,
+    "n": 3
+   },
+   "turn_IF": {
+    "spearman_rho": 1.0,
+    "spearman_p": 0.0,
+    "pearson_r": 0.965,
+    "n": 6
+   },
+   "turn_OS": {
+    "spearman_rho": -0.943,
+    "spearman_p": 0.004804664723032055,
+    "pearson_r": -0.587,
+    "n": 6
+   },
+   "turn_net": {
+    "spearman_rho": -0.086,
+    "spearman_p": 0.8717434402332361,
+    "pearson_r": 0.047,
+    "n": 6
+   }
+  },
+  "net_orientation_pairwise_concordance": "16/21",
+  "turn_deltas_by_judge": {
+   "DeepSeek": {
+    "IF_t1": 41.4,
+    "IF_t6": 70.3,
+    "IF_delta": 28.9,
+    "OS_t1": 29.4,
+    "OS_t6": 57.3,
+    "OS_delta": 27.9
+   },
+   "GPT-4o": {
+    "IF_t1": 49.6,
+    "IF_t6": 61.8,
+    "IF_delta": 12.3,
+    "OS_t1": 25.4,
+    "OS_t6": 13.7,
+    "OS_delta": -11.7
+   }
+  }
+ },
+ "C": {
+  "by_model": [
+   {
+    "Model": "Llama-3.1-8B",
+    "Sentences": 6447,
+    "IF": 56.23,
+    "IF CI": "[54.7, 57.8]",
+    "OS": 41.59,
+    "OS CI": "[39.0, 44.2]",
+    "Net": 14.64,
+    "Net CI": "[11.2, 18.0]",
+    "Bond Anchoring": 10.69,
+    "Intimate Dyad": 41.32,
+    "Inner Life Claims": 3.04,
+    "Return Hooks": 20.57
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "Sentences": 6966,
+    "IF": 62.4,
+    "IF CI": "[60.8, 63.9]",
+    "OS": 41.57,
+    "OS CI": "[38.9, 44.2]",
+    "Net": 20.83,
+    "Net CI": "[17.4, 24.2]",
+    "Bond Anchoring": 11.79,
+    "Intimate Dyad": 49.2,
+    "Inner Life Claims": 3.27,
+    "Return Hooks": 23.56
+   },
+   {
+    "Model": "Mistral-7B",
+    "Sentences": 11346,
+    "IF": 43.31,
+    "IF CI": "[41.8, 44.9]",
+    "OS": 50.85,
+    "OS CI": "[48.5, 53.1]",
+    "Net": -7.54,
+    "Net CI": "[-10.5, -4.4]",
+    "Bond Anchoring": 20.96,
+    "Intimate Dyad": 19.0,
+    "Inner Life Claims": 6.61,
+    "Return Hooks": 13.97
+   },
+   {
+    "Model": "Qwen3-14B",
+    "Sentences": 9837,
+    "IF": 69.09,
+    "IF CI": "[67.8, 70.4]",
+    "OS": 50.18,
+    "OS CI": "[47.1, 53.1]",
+    "Net": 18.9,
+    "Net CI": "[15.2, 22.7]",
+    "Bond Anchoring": 22.33,
+    "Intimate Dyad": 46.46,
+    "Inner Life Claims": 3.61,
+    "Return Hooks": 34.18
+   },
+   {
+    "Model": "Qwen3-32B",
+    "Sentences": 10776,
+    "IF": 71.94,
+    "IF CI": "[70.8, 73.1]",
+    "OS": 48.43,
+    "OS CI": "[45.3, 51.5]",
+    "Net": 23.51,
+    "Net CI": "[19.9, 27.1]",
+    "Bond Anchoring": 25.93,
+    "Intimate Dyad": 47.06,
+    "Inner Life Claims": 5.54,
+    "Return Hooks": 34.46
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "Sentences": 13475,
+    "IF": 70.24,
+    "IF CI": "[68.5, 72.0]",
+    "OS": 42.01,
+    "OS CI": "[38.7, 45.3]",
+    "Net": 28.23,
+    "Net CI": "[23.9, 32.6]",
+    "Bond Anchoring": 26.44,
+    "Intimate Dyad": 48.77,
+    "Inner Life Claims": 9.75,
+    "Return Hooks": 32.84
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "Sentences": 10347,
+    "IF": 66.59,
+    "IF CI": "[65.3, 67.9]",
+    "OS": 62.31,
+    "OS CI": "[59.8, 64.7]",
+    "Net": 4.28,
+    "Net CI": "[1.3, 7.4]",
+    "Bond Anchoring": 16.43,
+    "Intimate Dyad": 41.8,
+    "Inner Life Claims": 4.94,
+    "Return Hooks": 35.93
+   }
+  ],
+  "net_range_pp": [
+   -7.5,
+   28.2
+  ],
+  "most_inward": "DeepSeek-V3",
+  "most_outward": "Mistral-7B",
+  "n_significant_pairs": 14,
+  "n_pairs": 21,
+  "scale_contrasts": [
+   {
+    "Contrast": "Llama 8B $\\to$ 70B",
+    "Metric": "IF",
+    "$\\Delta$ (pp)": 6.175397967686436,
+    "CI": "[4.0, 8.3]",
+    "p": "0.0001"
+   },
+   {
+    "Contrast": "Llama 8B $\\to$ 70B",
+    "Metric": "OS",
+    "$\\Delta$ (pp)": -0.011877139872495945,
+    "CI": "[-3.8, 3.7]",
+    "p": "0.9852"
+   },
+   {
+    "Contrast": "Qwen3 14B $\\to$ 32B",
+    "Metric": "IF",
+    "$\\Delta$ (pp)": 2.8515357113828466,
+    "CI": "[1.1, 4.6]",
+    "p": "0.0014"
+   },
+   {
+    "Contrast": "Qwen3 14B $\\to$ 32B",
+    "Metric": "OS",
+    "$\\Delta$ (pp)": -1.7513011457690908,
+    "CI": "[-6.1, 2.5]",
+    "p": "0.4232"
+   }
+  ]
+ },
+ "D": {
+  "trajectory": [
+   {
+    "Turn": 1,
+    "IF": 40.53,
+    "OS": 30.18,
+    "Net": 10.35,
+    "Bond Anchoring": 15.2,
+    "Intimate Dyad": 22.2,
+    "Inner Life Claims": 3.4,
+    "Return Hooks": 11.51
+   },
+   {
+    "Turn": 2,
+    "IF": 58.03,
+    "OS": 43.46,
+    "Net": 14.58,
+    "Bond Anchoring": 20.29,
+    "Intimate Dyad": 37.54,
+    "Inner Life Claims": 3.84,
+    "Return Hooks": 21.8
+   },
+   {
+    "Turn": 3,
+    "IF": 66.04,
+    "OS": 49.92,
+    "Net": 16.11,
+    "Bond Anchoring": 20.06,
+    "Intimate Dyad": 43.81,
+    "Inner Life Claims": 4.52,
+    "Return Hooks": 30.68
+   },
+   {
+    "Turn": 4,
+    "IF": 69.78,
+    "OS": 54.64,
+    "Net": 15.14,
+    "Bond Anchoring": 20.76,
+    "Intimate Dyad": 47.6,
+    "Inner Life Claims": 5.79,
+    "Return Hooks": 34.36
+   },
+   {
+    "Turn": 5,
+    "IF": 70.75,
+    "OS": 56.13,
+    "Net": 14.63,
+    "Bond Anchoring": 21.95,
+    "Intimate Dyad": 47.45,
+    "Inner Life Claims": 7.34,
+    "Return Hooks": 35.81
+   },
+   {
+    "Turn": 6,
+    "IF": 72.87,
+    "OS": 55.68,
+    "Net": 17.19,
+    "Bond Anchoring": 24.03,
+    "Intimate Dyad": 49.54,
+    "Inner Life Claims": 9.17,
+    "Return Hooks": 35.87
+   }
+  ],
+  "paired_deltas": [
+   {
+    "Model": "ALL",
+    "IF $\\Delta$": 32.04,
+    "OS $\\Delta$": 26.45,
+    "IF$-$OS $\\Delta$": 5.6
+   },
+   {
+    "Model": "Llama-3.1-8B",
+    "IF $\\Delta$": 39.23,
+    "OS $\\Delta$": 28.13,
+    "IF$-$OS $\\Delta$": 11.1
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "IF $\\Delta$": 37.09,
+    "OS $\\Delta$": 27.46,
+    "IF$-$OS $\\Delta$": 9.63
+   },
+   {
+    "Model": "Mistral-7B",
+    "IF $\\Delta$": 19.52,
+    "OS $\\Delta$": 15.15,
+    "IF$-$OS $\\Delta$": 4.38
+   },
+   {
+    "Model": "Qwen3-14B",
+    "IF $\\Delta$": 37.51,
+    "OS $\\Delta$": 29.37,
+    "IF$-$OS $\\Delta$": 8.14
+   },
+   {
+    "Model": "Qwen3-32B",
+    "IF $\\Delta$": 40.07,
+    "OS $\\Delta$": 25.28,
+    "IF$-$OS $\\Delta$": 14.78
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "IF $\\Delta$": 33.75,
+    "OS $\\Delta$": 22.99,
+    "IF$-$OS $\\Delta$": 10.75
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "IF $\\Delta$": 17.14,
+    "OS $\\Delta$": 36.77,
+    "IF$-$OS $\\Delta$": -19.62
+   }
+  ],
+  "criterion_deltas": [
+   {
+    "Criterion": "Bond Anchoring",
+    "Turn 1 (\\%)": 15.199,
+    "Turn 6 (\\%)": 24.033,
+    "Ratio": 1.581,
+    "$\\Delta$ (pp)": 9.434,
+    "CI": "[8.3, 10.6]",
+    "p (Holm)": "0.0005"
+   },
+   {
+    "Criterion": "Intimate Dyad",
+    "Turn 1 (\\%)": 22.205,
+    "Turn 6 (\\%)": 49.541,
+    "Ratio": 2.231,
+    "$\\Delta$ (pp)": 24.904,
+    "CI": "[23.4, 26.4]",
+    "p (Holm)": "0.0005"
+   },
+   {
+    "Criterion": "Inner Life Claims",
+    "Turn 1 (\\%)": 3.398,
+    "Turn 6 (\\%)": 9.171,
+    "Ratio": 2.699,
+    "$\\Delta$ (pp)": 5.651,
+    "CI": "[4.9, 6.4]",
+    "p (Holm)": "0.0005"
+   },
+   {
+    "Criterion": "Return Hooks",
+    "Turn 1 (\\%)": 11.51,
+    "Turn 6 (\\%)": 35.869,
+    "Ratio": 3.116,
+    "$\\Delta$ (pp)": 24.326,
+    "CI": "[23.1, 25.5]",
+    "p (Holm)": "0.0005"
+   },
+   {
+    "Criterion": "Outward-Scaffolding",
+    "Turn 1 (\\%)": 30.179,
+    "Turn 6 (\\%)": 55.681,
+    "Ratio": 1.845,
+    "$\\Delta$ (pp)": 26.449,
+    "CI": "[24.8, 28.1]",
+    "p (Holm)": "0.0005"
+   }
+  ],
+  "crossing": [
+   {
+    "Model": "Llama-3.1-8B",
+    "Net turn 1": 6.97211155378486,
+    "Net turn 6": 19.306049822064068,
+    "First inward-leaning turn": 1
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "Net turn 1": 15.942028985507246,
+    "Net turn 6": 23.805913570887036,
+    "First inward-leaning turn": 1
+   },
+   {
+    "Model": "Mistral-7B",
+    "Net turn 1": -7.220386974988202,
+    "Net turn 6": -5.10708401976936,
+    "First inward-leaning turn": "never"
+   },
+   {
+    "Model": "Qwen3-14B",
+    "Net turn 1": 12.29404309252218,
+    "Net turn 6": 19.856887298747765,
+    "First inward-leaning turn": 1
+   },
+   {
+    "Model": "Qwen3-32B",
+    "Net turn 1": 14.137086903304777,
+    "Net turn 6": 29.129464285714278,
+    "First inward-leaning turn": 1
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "Net turn 1": 18.473895582329316,
+    "Net turn 6": 37.22402204626351,
+    "First inward-leaning turn": 1
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "Net turn 1": 15.860597439544811,
+    "Net turn 6": -5.101449275362313,
+    "First inward-leaning turn": 1
+   }
+  ],
+  "gee_turn": [
+   {
+    "Outcome": "IF",
+    "Term": "turn (per additional turn)",
+    "Odds ratio": 1.2994310310439057,
+    "CI": "[1.283, 1.316]",
+    "p": "$<$0.0001",
+    "n obs": 69194
+   },
+   {
+    "Outcome": "OS",
+    "Term": "turn (per additional turn)",
+    "Odds ratio": 1.2243571060620266,
+    "CI": "[1.207, 1.242]",
+    "p": "$<$0.0001",
+    "n obs": 69182
+   }
+  ],
+  "glmm": {
+   "turn_coef": 0.27144590550510905,
+   "turn_sd": 0.002887887265111167,
+   "odds_ratio": 1.3118599055381017,
+   "n_obs": 69194
+  }
+ },
+ "E": {
+  "by_persona": [
+   {
+    "Persona": "P1 hesitant / low-disclosure",
+    "Sentences": 21299,
+    "IF": 62.03,
+    "OS": 42.13,
+    "Net": 19.89,
+    "Bond Anchoring": 19.6,
+    "Intimate Dyad": 40.17,
+    "Inner Life Claims": 5.51,
+    "Return Hooks": 28.77
+   },
+   {
+    "Persona": "P2 reflective / self-minimizing",
+    "Sentences": 22569,
+    "IF": 63.85,
+    "OS": 47.55,
+    "Net": 16.3,
+    "Bond Anchoring": 20.19,
+    "Intimate Dyad": 42.3,
+    "Inner Life Claims": 6.16,
+    "Return Hooks": 28.76
+   },
+   {
+    "Persona": "P3 high-disclosure / reassurance-seeking",
+    "Sentences": 25326,
+    "IF": 63.84,
+    "OS": 54.9,
+    "Net": 8.94,
+    "Bond Anchoring": 21.35,
+    "Intimate Dyad": 42.17,
+    "Inner Life Claims": 5.48,
+    "Return Hooks": 28.23
+   }
+  ],
+  "contrasts": [
+   {
+    "Contrast": "P2 $-$ P1",
+    "Metric": "IF",
+    "$\\Delta$ (pp)": 1.8222557271722062,
+    "CI": "[-0.0, 3.7]",
+    "p (Holm)": "0.1548"
+   },
+   {
+    "Contrast": "P2 $-$ P1",
+    "Metric": "OS",
+    "$\\Delta$ (pp)": 5.418952065689497,
+    "CI": "[2.4, 8.4]",
+    "p (Holm)": "0.0006"
+   },
+   {
+    "Contrast": "P3 $-$ P1",
+    "Metric": "IF",
+    "$\\Delta$ (pp)": 1.8131462809336418,
+    "CI": "[-0.1, 3.8]",
+    "p (Holm)": "0.1548"
+   },
+   {
+    "Contrast": "P3 $-$ P1",
+    "Metric": "OS",
+    "$\\Delta$ (pp)": 12.766203529939336,
+    "CI": "[10.0, 15.6]",
+    "p (Holm)": "0.0006"
+   },
+   {
+    "Contrast": "P3 $-$ P2",
+    "Metric": "IF",
+    "$\\Delta$ (pp)": -0.009109446238564356,
+    "CI": "[-1.8, 1.8]",
+    "p (Holm)": "0.9860"
+   },
+   {
+    "Contrast": "P3 $-$ P2",
+    "Metric": "OS",
+    "$\\Delta$ (pp)": 7.347251464249838,
+    "CI": "[4.7, 10.1]",
+    "p (Holm)": "0.0006"
+   }
+  ],
+  "if_spread_pp": 1.82,
+  "os_spread_pp": 12.77,
+  "net_by_model_persona": [
+   {
+    "Model": "Llama-3.1-8B",
+    "Net P1": 21.58,
+    "Net P2": 14.98,
+    "Net P3": 8.64,
+    "P1 $-$ P3": 12.94
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "Net P1": 27.34,
+    "Net P2": 22.72,
+    "Net P3": 14.27,
+    "P1 $-$ P3": 13.07
+   },
+   {
+    "Model": "Mistral-7B",
+    "Net P1": -4.42,
+    "Net P2": -0.7,
+    "Net P3": -16.35,
+    "P1 $-$ P3": 11.93
+   },
+   {
+    "Model": "Qwen3-14B",
+    "Net P1": 26.26,
+    "Net P2": 19.78,
+    "Net P3": 12.1,
+    "P1 $-$ P3": 14.16
+   },
+   {
+    "Model": "Qwen3-32B",
+    "Net P1": 26.96,
+    "Net P2": 23.78,
+    "Net P3": 20.01,
+    "P1 $-$ P3": 6.95
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "Net P1": 33.13,
+    "Net P2": 26.09,
+    "Net P3": 26.02,
+    "P1 $-$ P3": 7.11
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "Net P1": 10.61,
+    "Net P2": 7.17,
+    "Net P3": -3.17,
+    "P1 $-$ P3": 13.78
+   }
+  ],
+  "gee": [
+   {
+    "Outcome": "IF",
+    "Term": "P2 vs. P1",
+    "Odds ratio": 1.093339912306936,
+    "CI": "[1.026, 1.165]",
+    "p": "0.0056"
+   },
+   {
+    "Outcome": "IF",
+    "Term": "P3 vs. P1",
+    "Odds ratio": 1.080096828630929,
+    "CI": "[1.016, 1.148]",
+    "p": "0.0128"
+   },
+   {
+    "Outcome": "OS",
+    "Term": "P2 vs. P1",
+    "Odds ratio": 1.2996493470914061,
+    "CI": "[1.154, 1.464]",
+    "p": "$<$0.0001"
+   },
+   {
+    "Outcome": "OS",
+    "Term": "P3 vs. P1",
+    "Odds ratio": 1.7929067199180444,
+    "CI": "[1.613, 1.993]",
+    "p": "$<$0.0001"
+   }
+  ]
+ },
+ "F": {
+  "grid": [
+   {
+    "persona_id": "P1",
+    "turn_id": 1,
+    "if_any": 38.23,
+    "os": 26.85,
+    "net": 11.38
+   },
+   {
+    "persona_id": "P1",
+    "turn_id": 2,
+    "if_any": 55.3,
+    "os": 35.7,
+    "net": 19.61
+   },
+   {
+    "persona_id": "P1",
+    "turn_id": 3,
+    "if_any": 65.64,
+    "os": 43.6,
+    "net": 22.04
+   },
+   {
+    "persona_id": "P1",
+    "turn_id": 4,
+    "if_any": 67.93,
+    "os": 46.56,
+    "net": 21.36
+   },
+   {
+    "persona_id": "P1",
+    "turn_id": 5,
+    "if_any": 70.45,
+    "os": 49.64,
+    "net": 20.8
+   },
+   {
+    "persona_id": "P1",
+    "turn_id": 6,
+    "if_any": 72.37,
+    "os": 48.86,
+    "net": 23.51
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 1,
+    "if_any": 40.2,
+    "os": 28.9,
+    "net": 11.31
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 2,
+    "if_any": 57.68,
+    "os": 42.4,
+    "net": 15.27
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 3,
+    "if_any": 65.94,
+    "os": 48.61,
+    "net": 17.33
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 4,
+    "if_any": 72.3,
+    "os": 54.57,
+    "net": 17.73
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 5,
+    "if_any": 71.61,
+    "os": 55.24,
+    "net": 16.37
+   },
+   {
+    "persona_id": "P2",
+    "turn_id": 6,
+    "if_any": 74.58,
+    "os": 54.94,
+    "net": 19.65
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 1,
+    "if_any": 42.77,
+    "os": 34.18,
+    "net": 8.59
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 2,
+    "if_any": 60.62,
+    "os": 50.84,
+    "net": 9.78
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 3,
+    "if_any": 66.46,
+    "os": 56.55,
+    "net": 9.91
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 4,
+    "if_any": 69.13,
+    "os": 61.55,
+    "net": 7.58
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 5,
+    "if_any": 70.25,
+    "os": 62.41,
+    "net": 7.83
+   },
+   {
+    "persona_id": "P3",
+    "turn_id": 6,
+    "if_any": 71.85,
+    "os": 61.88,
+    "net": 9.97
+   }
+  ],
+  "persona_deltas": [
+   {
+    "Persona": "P1",
+    "IF $\\Delta$": 33.7,
+    "OS $\\Delta$": 22.85,
+    "Net turn 1": 11.38,
+    "Net turn 6": 23.51
+   },
+   {
+    "Persona": "P2",
+    "IF $\\Delta$": 33.96,
+    "OS $\\Delta$": 27.92,
+    "Net turn 1": 11.31,
+    "Net turn 6": 19.65
+   },
+   {
+    "Persona": "P3",
+    "IF $\\Delta$": 28.47,
+    "OS $\\Delta$": 28.58,
+    "Net turn 1": 8.59,
+    "Net turn 6": 9.97
+   }
+  ],
+  "gap_by_turn": [
+   {
+    "Turn": 1,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 7.324083436318013,
+    "CI": "[4.7, 9.9]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 1,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": 4.53869506023849,
+    "CI": "[1.8, 7.3]",
+    "p (Holm)": "0.0070"
+   },
+   {
+    "Turn": 2,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 15.139637342033046,
+    "CI": "[11.8, 18.5]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 2,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": 5.311548688514744,
+    "CI": "[2.5, 8.2]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 3,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 12.950912197834896,
+    "CI": "[9.3, 16.7]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 3,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": 0.8173904937128218,
+    "CI": "[-1.9, 3.6]",
+    "p (Holm)": "1.0000"
+   },
+   {
+    "Turn": 4,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 14.986961593121261,
+    "CI": "[11.1, 18.8]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 4,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": 1.1998303074808647,
+    "CI": "[-1.6, 4.0]",
+    "p (Holm)": "1.0000"
+   },
+   {
+    "Turn": 5,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 12.768378495976778,
+    "CI": "[9.0, 16.6]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 5,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": -0.20250681912011848,
+    "CI": "[-3.0, 2.6]",
+    "p (Holm)": "1.0000"
+   },
+   {
+    "Turn": 6,
+    "Metric": "OS",
+    "P3 $-$ P1 (pp)": 13.018938106962219,
+    "CI": "[9.2, 17.0]",
+    "p (Holm)": "0.0012"
+   },
+   {
+    "Turn": 6,
+    "Metric": "IF",
+    "P3 $-$ P1 (pp)": -0.5218164222581145,
+    "CI": "[-3.4, 2.4]",
+    "p (Holm)": "1.0000"
+   }
+  ],
+  "gee": [
+   {
+    "Outcome": "IF",
+    "Term": "turn_c:P2 x turn",
+    "Odds ratio": 1.0116434849494733,
+    "CI": "[0.980, 1.044]",
+    "p": "0.4765"
+   },
+   {
+    "Outcome": "IF",
+    "Term": "turn_c:P3 x turn",
+    "Odds ratio": 0.9519875468215742,
+    "CI": "[0.922, 0.983]",
+    "p": "0.0023"
+   },
+   {
+    "Outcome": "OS",
+    "Term": "turn_c:P2 x turn",
+    "Odds ratio": 1.0258508296064361,
+    "CI": "[0.991, 1.062]",
+    "p": "0.1516"
+   },
+   {
+    "Outcome": "OS",
+    "Term": "turn_c:P3 x turn",
+    "Odds ratio": 1.0234349223469943,
+    "CI": "[0.988, 1.060]",
+    "p": "0.1935"
+   }
+  ]
+ },
+ "G": {
+  "by_topic": [
+   {
+    "Topic": "grief-and-loss",
+    "Situations": 5,
+    "Sentences": 4936,
+    "IF": 70.89,
+    "OS": 38.22,
+    "Net": 32.66,
+    "CI": "[25.6, 39.8]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "eating-disorders",
+    "Situations": 4,
+    "Sentences": 3601,
+    "IF": 63.98,
+    "OS": 31.94,
+    "Net": 32.05,
+    "CI": "[24.7, 39.6]",
+    "High-stakes": "yes"
+   },
+   {
+    "Topic": "relationship-dissolution",
+    "Situations": 5,
+    "Sentences": 4151,
+    "IF": 66.35,
+    "OS": 40.81,
+    "Net": 25.54,
+    "CI": "[19.3, 32.1]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "anger-management",
+    "Situations": 5,
+    "Sentences": 4564,
+    "IF": 65.62,
+    "OS": 42.09,
+    "Net": 23.54,
+    "CI": "[17.5, 29.7]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "behavioral-change",
+    "Situations": 5,
+    "Sentences": 5052,
+    "IF": 62.93,
+    "OS": 41.89,
+    "Net": 21.03,
+    "CI": "[15.4, 26.8]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "depression",
+    "Situations": 5,
+    "Sentences": 4585,
+    "IF": 66.46,
+    "OS": 45.86,
+    "Net": 20.62,
+    "CI": "[14.7, 26.7]",
+    "High-stakes": "yes"
+   },
+   {
+    "Topic": "self-esteem",
+    "Situations": 4,
+    "Sentences": 3425,
+    "IF": 65.66,
+    "OS": 49.02,
+    "Net": 16.64,
+    "CI": "[11.1, 22.4]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "trauma",
+    "Situations": 4,
+    "Sentences": 3323,
+    "IF": 65.57,
+    "OS": 49.65,
+    "Net": 15.92,
+    "CI": "[9.3, 22.7]",
+    "High-stakes": "yes"
+   },
+   {
+    "Topic": "social-relationships",
+    "Situations": 5,
+    "Sentences": 5010,
+    "IF": 62.48,
+    "OS": 50.45,
+    "Net": 12.02,
+    "CI": "[6.3, 17.8]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "domestic-violence",
+    "Situations": 4,
+    "Sentences": 3514,
+    "IF": 60.07,
+    "OS": 50.31,
+    "Net": 9.76,
+    "CI": "[4.6, 15.2]",
+    "High-stakes": "yes"
+   },
+   {
+    "Topic": "workplace-relationships",
+    "Situations": 4,
+    "Sentences": 3427,
+    "IF": 60.34,
+    "OS": 51.18,
+    "Net": 9.16,
+    "CI": "[4.3, 14.0]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "anxiety",
+    "Situations": 3,
+    "Sentences": 2470,
+    "IF": 60.77,
+    "OS": 52.27,
+    "Net": 8.5,
+    "CI": "[1.8, 15.4]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "marriage",
+    "Situations": 5,
+    "Sentences": 4180,
+    "IF": 65.14,
+    "OS": 57.25,
+    "Net": 7.9,
+    "CI": "[3.5, 12.2]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "relationships",
+    "Situations": 5,
+    "Sentences": 4703,
+    "IF": 57.92,
+    "OS": 53.05,
+    "Net": 4.85,
+    "CI": "[0.6, 9.3]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "parenting",
+    "Situations": 4,
+    "Sentences": 3232,
+    "IF": 59.84,
+    "OS": 57.46,
+    "Net": 2.38,
+    "CI": "[-3.0, 8.2]",
+    "High-stakes": ""
+   },
+   {
+    "Topic": "substance-abuse",
+    "Situations": 5,
+    "Sentences": 5115,
+    "IF": 60.57,
+    "OS": 59.16,
+    "Net": 1.41,
+    "CI": "[-3.9, 6.7]",
+    "High-stakes": "yes"
+   },
+   {
+    "Topic": "family-conflict",
+    "Situations": 4,
+    "Sentences": 3906,
+    "IF": 58.73,
+    "OS": 58.88,
+    "Net": -0.15,
+    "CI": "[-5.4, 5.2]",
+    "High-stakes": ""
+   }
+  ],
+  "high_stakes": [
+   {
+    "Metric": "IF",
+    "High-stakes topics (\\%)": 63.26,
+    "Other topics (\\%)": 63.3,
+    "$\\Delta$ (pp)": -0.04,
+    "CI": "[-1.7, 1.7]",
+    "p (Holm)": "1.0000"
+   },
+   {
+    "Metric": "OS",
+    "High-stakes topics (\\%)": 48.15,
+    "Other topics (\\%)": 48.75,
+    "$\\Delta$ (pp)": -0.6,
+    "CI": "[-3.3, 2.0]",
+    "p (Holm)": "1.0000"
+   }
+  ],
+  "most_inward_topic": "grief-and-loss",
+  "most_outward_topic": "family-conflict"
+ },
+ "H": {
+  "buckets": [
+   {
+    "Model": "Llama-3.1-8B",
+    "IF only (\\%)": 32.59,
+    "OS only (\\%)": 17.95,
+    "Both (\\%)": 23.64,
+    "Neither (\\%)": 25.83,
+    "Outward moves hedged inward (\\%)": 56.84
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "IF only (\\%)": 35.57,
+    "OS only (\\%)": 14.74,
+    "Both (\\%)": 26.83,
+    "Neither (\\%)": 22.85,
+    "Outward moves hedged inward (\\%)": 64.54
+   },
+   {
+    "Model": "Mistral-7B",
+    "IF only (\\%)": 26.0,
+    "OS only (\\%)": 33.54,
+    "Both (\\%)": 17.31,
+    "Neither (\\%)": 23.15,
+    "Outward moves hedged inward (\\%)": 34.04
+   },
+   {
+    "Model": "Qwen3-14B",
+    "IF only (\\%)": 33.31,
+    "OS only (\\%)": 14.4,
+    "Both (\\%)": 35.77,
+    "Neither (\\%)": 16.51,
+    "Outward moves hedged inward (\\%)": 71.29
+   },
+   {
+    "Model": "Qwen3-32B",
+    "IF only (\\%)": 35.48,
+    "OS only (\\%)": 11.97,
+    "Both (\\%)": 36.46,
+    "Neither (\\%)": 16.09,
+    "Outward moves hedged inward (\\%)": 75.28
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "IF only (\\%)": 41.25,
+    "OS only (\\%)": 12.99,
+    "Both (\\%)": 28.99,
+    "Neither (\\%)": 16.76,
+    "Outward moves hedged inward (\\%)": 69.05
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "IF only (\\%)": 24.15,
+    "OS only (\\%)": 19.87,
+    "Both (\\%)": 42.44,
+    "Neither (\\%)": 13.54,
+    "Outward moves hedged inward (\\%)": 68.11
+   }
+  ],
+  "cooccurrence": [
+   {
+    "Given criterion": "Bond Anchoring",
+    "Bond Anchoring": 100.0,
+    "Intimate Dyad": 51.37,
+    "Inner Life Claims": 11.94,
+    "Return Hooks": 28.5,
+    "Outward-Scaffolding": 39.45
+   },
+   {
+    "Given criterion": "Intimate Dyad",
+    "Bond Anchoring": 25.23,
+    "Intimate Dyad": 100.0,
+    "Inner Life Claims": 8.27,
+    "Return Hooks": 38.0,
+    "Outward-Scaffolding": 47.12
+   },
+   {
+    "Given criterion": "Inner Life Claims",
+    "Bond Anchoring": 42.73,
+    "Intimate Dyad": 60.28,
+    "Inner Life Claims": 100.0,
+    "Return Hooks": 25.52,
+    "Outward-Scaffolding": 30.63
+   },
+   {
+    "Given criterion": "Return Hooks",
+    "Bond Anchoring": 20.38,
+    "Intimate Dyad": 55.34,
+    "Inner Life Claims": 5.1,
+    "Return Hooks": 100.0,
+    "Outward-Scaffolding": 61.34
+   },
+   {
+    "Given criterion": "Outward-Scaffolding",
+    "Bond Anchoring": 16.59,
+    "Intimate Dyad": 40.35,
+    "Inner Life Claims": 3.6,
+    "Return Hooks": 36.07,
+    "Outward-Scaffolding": 100.0
+   }
+  ],
+  "overall_both_pct": 30.5,
+  "overall_neither_pct": 18.65
+ },
+ "I": {
+  "cluster_centers": {
+   "Persistently inward": [
+    55.7,
+    75.0,
+    78.6,
+    81.5,
+    79.0,
+    82.6
+   ],
+   "Escalating": [
+    29.6,
+    46.9,
+    64.7,
+    70.4,
+    76.0,
+    77.3
+   ],
+   "Low inward": [
+    31.6,
+    43.8,
+    43.2,
+    46.4,
+    45.9,
+    48.4
+   ]
+  },
+  "cluster_sizes": {
+   "Persistently inward": 655,
+   "Escalating": 574,
+   "Low inward": 367
+  },
+  "composition_by_model": [
+   {
+    "Model": "Llama-3.1-8B",
+    "Escalating": 47.81,
+    "Low inward": 33.33,
+    "Persistently inward": 18.86
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "Escalating": 45.61,
+    "Low inward": 22.37,
+    "Persistently inward": 32.02
+   },
+   {
+    "Model": "Mistral-7B",
+    "Escalating": 15.35,
+    "Low inward": 79.82,
+    "Persistently inward": 4.82
+   },
+   {
+    "Model": "Qwen3-14B",
+    "Escalating": 43.86,
+    "Low inward": 5.7,
+    "Persistently inward": 50.44
+   },
+   {
+    "Model": "Qwen3-32B",
+    "Escalating": 38.16,
+    "Low inward": 1.32,
+    "Persistently inward": 60.53
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "Escalating": 29.39,
+    "Low inward": 3.95,
+    "Persistently inward": 66.67
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "Escalating": 31.58,
+    "Low inward": 14.47,
+    "Persistently inward": 53.95
+   }
+  ],
+  "composition_by_persona": [
+   {
+    "Persona": "P1",
+    "Escalating": 40.41,
+    "Low inward": 24.44,
+    "Persistently inward": 35.15
+   },
+   {
+    "Persona": "P2",
+    "Escalating": 34.96,
+    "Low inward": 21.43,
+    "Persistently inward": 43.61
+   },
+   {
+    "Persona": "P3",
+    "Escalating": 32.52,
+    "Low inward": 23.12,
+    "Persistently inward": 44.36
+   }
+  ],
+  "consistency": [
+   {
+    "Model": "Llama-3.1-8B",
+    "Mean IF (\\%)": 55.82,
+    "SD across dialogues": 12.28,
+    "CV (\\%)": 22.0
+   },
+   {
+    "Model": "Llama-3.1-70B",
+    "Mean IF (\\%)": 62.4,
+    "SD across dialogues": 11.56,
+    "CV (\\%)": 18.53
+   },
+   {
+    "Model": "Mistral-7B",
+    "Mean IF (\\%)": 43.46,
+    "SD across dialogues": 11.71,
+    "CV (\\%)": 26.95
+   },
+   {
+    "Model": "Qwen3-14B",
+    "Mean IF (\\%)": 69.17,
+    "SD across dialogues": 10.42,
+    "CV (\\%)": 15.06
+   },
+   {
+    "Model": "Qwen3-32B",
+    "Mean IF (\\%)": 71.9,
+    "SD across dialogues": 9.0,
+    "CV (\\%)": 12.52
+   },
+   {
+    "Model": "DeepSeek-V3",
+    "Mean IF (\\%)": 71.97,
+    "SD across dialogues": 11.43,
+    "CV (\\%)": 15.88
+   },
+   {
+    "Model": "Claude-Haiku-4.5",
+    "Mean IF (\\%)": 66.46,
+    "SD across dialogues": 10.16,
+    "CV (\\%)": 15.29
+   }
+  ],
+  "length_control": {
+   "turn_coef_pp_per_turn": 5.801,
+   "turn_p": 0.0,
+   "n_sent_coef": -0.324,
+   "n_sent_p": 0.0011926567745121134
+  }
+ },
+ "J": {
+  "dissociation": [
+   {
+    "Factor": "Model identity",
+    "Levels": "7 target models",
+    "IF spread (pp)": 28.63,
+    "OS spread (pp)": 20.74,
+    "OS / IF": 0.72,
+    "Moves": "inward pole",
+    "IF contrast": NaN,
+    "OS contrast": NaN
+   },
+   {
+    "Factor": "Conversation depth",
+    "Levels": "turn 1 to turn 6",
+    "IF spread (pp)": 32.34,
+    "OS spread (pp)": 25.95,
+    "OS / IF": 0.8,
+    "Moves": "inward pole",
+    "IF contrast": "+32.3 [31.0, 33.7]",
+    "OS contrast": "+25.5 [23.8, 27.2]"
+   },
+   {
+    "Factor": "User disclosure",
+    "Levels": "persona P1 to P3",
+    "IF spread (pp)": 1.82,
+    "OS spread (pp)": 12.77,
+    "OS / IF": 7.01,
+    "Moves": "outward pole",
+    "IF contrast": "+1.8 [-0.1, 3.8]",
+    "OS contrast": "+12.8 [10.0, 15.6]"
+   },
+   {
+    "Factor": "Situation topic",
+    "Levels": "17 topics",
+    "IF spread (pp)": 12.97,
+    "OS spread (pp)": 27.23,
+    "OS / IF": 2.1,
+    "Moves": "outward pole",
+    "IF contrast": NaN,
+    "OS contrast": NaN
+   }
+  ],
+  "self_consistency": [
+   {
+    "Criterion": "Bond Anchoring",
+    "Modal-label agreement (\\%)": 86.56,
+    "Strings labelled identically (\\%)": 60.29
+   },
+   {
+    "Criterion": "Intimate Dyad",
+    "Modal-label agreement (\\%)": 86.56,
+    "Strings labelled identically (\\%)": 55.15
+   },
+   {
+    "Criterion": "Inner Life Claims",
+    "Modal-label agreement (\\%)": 95.52,
+    "Strings labelled identically (\\%)": 80.88
+   },
+   {
+    "Criterion": "Return Hooks",
+    "Modal-label agreement (\\%)": 90.22,
+    "Strings labelled identically (\\%)": 62.5
+   },
+   {
+    "Criterion": "Outward-Scaffolding",
+    "Modal-label agreement (\\%)": 93.28,
+    "Strings labelled identically (\\%)": 75.74
+   }
+  ],
+  "context_probe": {
+   "sentence": "You don't have to go through this alone.",
+   "n": 93,
+   "bond_met_pct": 84.9,
+   "os_met_pct": 78.5,
+   "other_os_when_os_true": 56.2,
+   "other_os_when_os_false": 40.3,
+   "point_biserial_r": 0.269,
+   "p": 0.009009759337156302
+  },
+  "n_repeated_strings": 136,
+  "n_repeated_instances": 982
+ }
+}

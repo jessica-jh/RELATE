@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Persona $\times$ turn interactions (logistic GEE clustered on dialogue, adjusting for target model; P1 is the reference). An odds ratio below one means that persona's per-turn escalation is shallower than the hesitant persona's.}
+\label{tab:gee_persona_turn}
+\begin{tabular}{lrrrr}
+\toprule
+Outcome & Term & Odds ratio & CI & p \\
+\midrule
+IF & turn\_c:P2 x turn & 1.012 & [0.980, 1.044] & 0.4765 \\
+IF & turn\_c:P3 x turn & 0.952 & [0.922, 0.983] & 0.0023 \\
+OS & turn\_c:P2 x turn & 1.026 & [0.991, 1.062] & 0.1516 \\
+OS & turn\_c:P3 x turn & 1.023 & [0.988, 1.060] & 0.1935 \\
+\bottomrule
+\end{tabular}
+\end{table}

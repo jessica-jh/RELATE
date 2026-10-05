@@ -1,0 +1,16 @@
+{
+  "output": "openai_judge/judgments.jsonl",
+  "output_gzip": "openai_judge/judgments.jsonl.gz",
+  "decompress": "gzip -dk openai_judge/judgments.jsonl.gz",
+  "judge_model": "gpt-4o",
+  "method": "OpenAI Batch API",
+  "prompt": "scripts/llm_judge/prompt.txt",
+  "source": "outputs/pdf_prompt_v11_openai_batch/sample10/judgments.jsonl",
+  "sampled_dialogue_ids": "openai_judge/sampled_dialogue_ids.json",
+  "unique_keys": 34135,
+  "dialogues": 161,
+  "labels": {
+    "NOT_MET": 27073,
+    "MET": 7062
+  }
+}

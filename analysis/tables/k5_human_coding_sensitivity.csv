@@ -1,0 +1,7 @@
+Coding of the two irregular cells,Pair,Measure,Agreement \%,Cohen $\kappa$,Gwet AC1
+Marks counted (reported),Annotator 2 vs Annotator 1,OS,96.9,0.91,0.95
+Marks counted (reported),Annotator 2 vs DeepSeek,OS,70.0,0.4,0.44
+Marks counted (reported),Annotator 2 vs GPT-4o,OS,83.3,0.55,0.74
+Marks read as blank,Annotator 2 vs Annotator 1,OS,96.7,0.91,0.95
+Marks read as blank,Annotator 2 vs DeepSeek,OS,69.8,0.4,0.44
+Marks read as blank,Annotator 2 vs GPT-4o,OS,83.1,0.54,0.73

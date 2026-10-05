@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Sentence-level agreement on IF and OS between the two human annotators and between each annotator and each judge, on the 881 assistant sentences that both annotators labelled. Positive rates are for the first and second rater of the pair, in the order named. Brackets give 95\% dialogue-level bootstrap confidence intervals on the agreement rate. IF follows the aggregation rule in Appendix E.1. McNemar tests the asymmetry of the disagreements.}
+\label{tab:human_agreement}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Pair & Measure & Rater 1 positive \% & Rater 2 positive \% & Agreement \% & 95\% CI & Cohen $\kappa$ & Gwet AC1 & McNemar p & McNemar p (Holm) \\
+\midrule
+Annotator 1 vs Annotator 2 & IF & 36.1 & 38.5 & 94.4 & [92.7, 95.9] & 0.88 & 0.90 & 0.0038 & 0.0114 \\
+Annotator 1 vs Annotator 2 & OS & 23.0 & 21.8 & 96.9 & [95.0, 98.5] & 0.91 & 0.95 & 0.0522 & 0.0522 \\
+Annotator 1 vs DeepSeek & IF & 36.1 & 63.3 & 55.3 & [48.5, 61.8] & 0.17 & 0.11 & $<$0.0001 & $<$0.0001 \\
+Annotator 1 vs DeepSeek & OS & 23.0 & 50.2 & 72.2 & [66.2, 78.1] & 0.44 & 0.48 & $<$0.0001 & $<$0.0001 \\
+Annotator 1 vs GPT-4o & IF & 36.1 & 53.6 & 49.6 & [44.0, 55.5] & 0.01 & 0.00 & $<$0.0001 & $<$0.0001 \\
+Annotator 1 vs GPT-4o & OS & 23.0 & 26.9 & 84.8 & [81.4, 88.4] & 0.59 & 0.76 & 0.0042 & 0.0114 \\
+Annotator 2 vs DeepSeek & IF & 38.5 & 63.3 & 55.2 & [49.2, 60.9] & 0.16 & 0.10 & $<$0.0001 & $<$0.0001 \\
+Annotator 2 vs DeepSeek & OS & 21.8 & 50.2 & 70.0 & [63.7, 76.2] & 0.40 & 0.44 & $<$0.0001 & $<$0.0001 \\
+Annotator 2 vs GPT-4o & IF & 38.5 & 53.6 & 49.5 & [44.2, 55.1] & 0.01 & 0.00 & $<$0.0001 & $<$0.0001 \\
+Annotator 2 vs GPT-4o & OS & 21.8 & 26.9 & 83.3 & [79.8, 86.8] & 0.55 & 0.74 & 0.0003 & 0.0010 \\
+DeepSeek vs GPT-4o & IF & 63.3 & 53.6 & 67.1 & [63.6, 70.4] & 0.33 & 0.36 & $<$0.0001 & $<$0.0001 \\
+DeepSeek vs GPT-4o & OS & 50.2 & 26.9 & 75.1 & [68.1, 81.6] & 0.50 & 0.53 & $<$0.0001 & $<$0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}

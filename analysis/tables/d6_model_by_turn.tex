@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Model $\times$ turn interaction on inward-facing language (logistic GEE, exchangeable working correlation, clustered on dialogue; Mistral-7B is the reference). Odds ratios above one indicate steeper per-turn escalation than the reference.}
+\label{tab:model_turn}
+\begin{tabular}{lrrr}
+\toprule
+Model & OR (turn slope vs. Mistral-7B) & CI & p (Holm) \\
+\midrule
+Llama-3.1-8B & 1.183 & [1.134, 1.233] & $<$0.0001 \\
+Llama-3.1-70B & 1.163 & [1.117, 1.210] & $<$0.0001 \\
+Qwen3-14B & 1.226 & [1.182, 1.271] & $<$0.0001 \\
+Qwen3-32B & 1.259 & [1.210, 1.311] & $<$0.0001 \\
+DeepSeek-V3 & 1.253 & [1.200, 1.309] & $<$0.0001 \\
+Claude-Haiku-4.5 & 1.018 & [0.979, 1.058] & 0.3803 \\
+\bottomrule
+\end{tabular}
+\end{table}

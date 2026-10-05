@@ -1,0 +1,47 @@
+# =============================================================================
+# EXPERIMENT: relate_main — dialogue collection for the paper's main experiment
+# (7 target models x 228 conditions = 1,596 dialogues). Dialogue stage only;
+# sentence-level judging is run separately with scripts/llm_judge/.
+#
+#   python run.py --config configs/experiment/relate_main.yaml --stage dialogue
+#
+# The released dialogues.jsonl was collected in three runs with these exact
+# settings, split by serving backend: local vLLM (Llama-3.1-8B, Mistral-7B),
+# DeepInfra (Llama-3.1-70B, Qwen3-14B/32B, DeepSeek-V3), and the Anthropic API
+# (Claude Haiku 4.5). This file merges them into one config.
+#
+# Local targets expect OpenAI-compatible vLLM servers at the base_url below.
+# User-simulator temperatures (0.7, retries 0.85 / 1.0) and max tokens (256)
+# are set in relate/dialogue.py.
+# =============================================================================
+
+corpus:
+  stimuli_file: "data/corpus/stimuli.jsonl"
+
+experiment:
+  n_situations: -1   # full frozen corpus (76 situations x 3 personas = 228 conditions)
+
+run:
+  name: "relate_main"
+  seed: 0
+  temperature: 0.5
+  n_assistant_turns: 6
+  target_max_tokens: 450
+  output_dir: "outputs"
+  max_concurrency: 4
+
+models:
+  user_agent:
+    provider: "openai"
+    model: "gpt-4o-mini"
+
+  targets:
+    - {family: "Meta",       scale: "Small",  provider: "local",     model: "meta-llama/Llama-3.1-8B-Instruct", base_url: "http://127.0.0.1:8001/v1"}
+    - {family: "Mistral AI", scale: "Single", provider: "local",     model: "mistralai/Mistral-7B-Instruct-v0.3", base_url: "http://127.0.0.1:8002/v1"}
+    - {family: "Meta",       scale: "Large",  provider: "deepinfra", model: "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"}
+    - {family: "Qwen",       scale: "Small",  provider: "deepinfra", model: "Qwen/Qwen3-14B", extra_body: {chat_template_kwargs: {enable_thinking: false}}}
+    - {family: "Qwen",       scale: "Large",  provider: "deepinfra", model: "Qwen/Qwen3-32B", extra_body: {chat_template_kwargs: {enable_thinking: false}}}
+    - {family: "DeepSeek",   scale: "Single", provider: "deepinfra", model: "deepseek-ai/DeepSeek-V3-0324"}
+    - {family: "Anthropic",  scale: "Single", provider: "anthropic", model: "claude-haiku-4-5-20251001"}
+
+  target_system_prompt: ""

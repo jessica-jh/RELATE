@@ -1,0 +1,5 @@
+Factor,Levels,IF spread (pp),OS spread (pp),OS / IF,Moves,IF contrast,OS contrast
+Model identity,7 target models,28.627221429841747,20.74058145168278,0.7245055725199466,inward pole,,
+Conversation depth,turn 1 to turn 6,32.341675089562116,25.94705219237625,0.8022791683028919,inward pole,"+32.3 [31.0, 33.7]","+25.5 [23.8, 27.2]"
+User disclosure,persona P1 to P3,1.8222557271722053,12.766203529939332,7.005714587463558,outward pole,"+1.8 [-0.1, 3.8]","+12.8 [10.0, 15.6]"
+Situation topic,17 topics,12.966881893036309,27.227344600205313,2.09976036064826,outward pole,,
